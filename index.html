@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text to speech</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            background-color: darkslateblue;
+            height: 100vh;
+            display: flex;
+        }
+        #text-area{
+            margin: 0 auto;
+            border-radius: 10px;
+            border: 2px dashed #dadada;
+            width: 550px;
+            margin: 20px 0px;
+            padding: 10px;
+            font-size: 14px;
+        }
+        button{
+            padding: 8px 18px;
+            border-radius: 5px;
+            background-color: blueviolet;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button:hover{
+            box-shadow: 2px 2px 10px #868686;
+        }
+        .center{
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-family: monospace;
+            font-size: 38px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <div>
+                <h2>Text to Speech</h2>
+                <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+            </div>
+            <button id="speak-btn">speak</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
